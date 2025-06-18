@@ -73,9 +73,8 @@
                 android:padding="12dp"
                 android:layout_marginBottom="16dp"/>
 
-            <com.google.android.material.button.MaterialButton
+            <com.google.android.material.button.MaterialButtonandroid:layout_width="match_parent"
                 android:id="@+id/registerButton"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Create New Account"
                 android:padding="12dp"
