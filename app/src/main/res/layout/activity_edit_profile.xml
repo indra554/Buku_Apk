@@ -83,8 +83,8 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/saveButton"
                 android:layout_width="match_parent"
-                android:text="Save Changes"
                 android:layout_height="wrap_content"
+                android:text="Save Changes"
                 android:padding="12dp"/>
 
         </LinearLayout>
