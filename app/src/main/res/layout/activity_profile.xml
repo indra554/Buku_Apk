@@ -60,8 +60,8 @@
                         android:layout_marginBottom="4dp"/>
 
                     <TextView
-                        android:id="@+id/nameText"
                         android:layout_width="match_parent"
+                        android:id="@+id/nameText"
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         android:textStyle="bold"
