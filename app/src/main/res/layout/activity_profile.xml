@@ -102,11 +102,11 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/editProfileButton"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Edit Profile"
                 android:drawableStart="@android:drawable/ic_menu_edit"
                 android:drawablePadding="8dp"
+                android:layout_width="match_parent"
                 android:padding="12dp"
                 android:layout_marginBottom="16dp"/>
 
