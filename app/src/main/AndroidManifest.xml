@@ -29,7 +29,6 @@
         <activity android:name=".BookListActivity" />
         <activity android:name=".BookDetailActivity" />
         <activity android:name=".EditProfileActivity" />
-        <activity android:name=".ProfileActivity" />
 
     </application>
 </manifest>
