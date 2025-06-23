@@ -9,15 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bukuapp.model.Book
 
-class BookListActivity : AppCompatActivity() {
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: BookAdapter
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_book_list)
-
-        setSupportActionBar(findViewById(R.id.toolbar))
 
         recyclerView = findViewById(R.id.booksRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
