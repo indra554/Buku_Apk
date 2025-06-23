@@ -31,9 +31,6 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
         holder.bookTitle.text = book.title
         holder.bookAuthor.text = book.author
         
-        // Format price in Indonesian Rupiah
-        val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
-        holder.bookPrice.text = formatter.format(book.price)
 
         // Load image from drawable
         holder.bookImage.setImageResource(book.imageResId)
