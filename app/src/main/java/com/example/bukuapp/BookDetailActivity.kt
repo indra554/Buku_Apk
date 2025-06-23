@@ -1,17 +1,4 @@
-package com.example.bukuapp
 
-import android.content.Intent
-import android.net.Uri
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.example.bukuapp.model.Book
-import com.google.android.material.button.MaterialButton
-import java.text.NumberFormat
-import java.util.Locale
-
-class BookDetailActivity : AppCompatActivity() {
-    companion object {
-        const val EXTRA_BOOK_ID = "extra_book_id"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,11 +25,11 @@ class BookDetailActivity : AppCompatActivity() {
         // Set book details
         findViewById<android.widget.TextView>(R.id.bookTitle).text = book.title
         findViewById<android.widget.TextView>(R.id.bookAuthor).text = book.author
-        
+
         // Format price in Indonesian Rupiah
         val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
         findViewById<android.widget.TextView>(R.id.bookPrice).text = formatter.format(book.price)
-        
+
         findViewById<android.widget.TextView>(R.id.bookDescription).text = book.description
 
         // Set up WhatsApp order button
