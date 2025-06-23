@@ -13,7 +13,11 @@ import java.util.Locale
 
 class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
 
-
+    class BookViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val bookImage: ImageView = view.findViewById(R.id.bookImage)
+        val bookTitle: TextView = view.findViewById(R.id.bookTitle)
+        val bookAuthor: TextView = view.findViewById(R.id.bookAuthor)
+        val bookPrice: TextView = view.findViewById(R.id.bookPrice)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
