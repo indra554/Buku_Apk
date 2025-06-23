@@ -36,15 +36,15 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
         holder.bookPrice.text = formatter.format(book.price)
 
         // Load image from drawable
-        holder.b   // Set click listener
+        holder.bookImage.setImageResource(book.imageResId)
+
+        // Set click listener
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context, BookDetailActivity::class.java).apply {
                 putExtra(BookDetailActivity.EXTRA_BOOK_ID, book.id)
             }
             holder.itemView.context.startActivity(intent)
-        }ookImage.setImageResource(book.imageResId)
-
-
+        }
     }
 
     override fun getItemCount() = books.size
