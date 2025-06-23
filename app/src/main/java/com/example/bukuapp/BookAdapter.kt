@@ -26,10 +26,7 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
         return BookViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: BookViewHolder, position: Int) {
-        val book = books[position]
-        holder.bookTitle.text = book.title
-        holder.bookAuthor.text = book.author
+
         
         // Format price in Indonesian Rupiah
         val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
