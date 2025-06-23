@@ -38,11 +38,7 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
         // Load image from drawable
         holder.bookImage.setImageResource(book.imageResId)
 
-        // Set click listener
-        holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, BookDetailActivity::class.java).apply {
-                putExtra(BookDetailActivity.EXTRA_BOOK_ID, book.id)
-            }
+
             holder.itemView.context.startActivity(intent)
         }
     }
