@@ -21,14 +21,7 @@ class BookDetailActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val bookId = intent.getIntExtra(EXTRA_BOOK_ID, -1)
-        if (bookId == -1) {
-            finish()
-            return
-        }
 
-        val book = Book.dummyBooks.find { it.id == bookId }
-        book?.let { displayBookDetails(it) }
     }
 
     private fun displayBookDetails(book: Book) {
