@@ -28,10 +28,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT,
                 $COLUMN_USERNAME TEXT UNIQUE NOT NULL,
                 $COLUMN_PASSWORD TEXT NOT NULL,
-                $COLUMN_NAME TEXT NOT NULL,
-                $COLUMN_EMAIL TEXT NOT NULL,
-                $COLUMN_PHONE TEXT NOT NULL
-            )
         """.trimIndent()
         db.execSQL(createTable)
     }
