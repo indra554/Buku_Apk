@@ -35,8 +35,7 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
         val formatter = NumberFormat.getCurrencyInstance(Locale("id", "ID"))
         holder.bookPrice.text = formatter.format(book.price)
 
-        // Load image from drawable
-        holder.bookImage.setImageResource(book.imageResId)
+
 
         // Set click listener
         holder.itemView.setOnClickListener {
