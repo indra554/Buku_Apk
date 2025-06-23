@@ -54,12 +54,3 @@ class BookDetailActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW).apply {
                 data = Uri.parse(whatsappUrl)
             }
-            startActivity(intent)
-        }
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
-    }
-}
