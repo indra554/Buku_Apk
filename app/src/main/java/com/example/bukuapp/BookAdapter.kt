@@ -43,3 +43,9 @@ class BookAdapter(private val books: List<Book>) : RecyclerView.Adapter<BookAdap
             val intent = Intent(holder.itemView.context, BookDetailActivity::class.java).apply {
                 putExtra(BookDetailActivity.EXTRA_BOOK_ID, book.id)
             }
+            holder.itemView.context.startActivity(intent)
+        }
+    }
+
+    override fun getItemCount() = books.size
+}
