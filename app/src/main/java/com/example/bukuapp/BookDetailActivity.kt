@@ -14,7 +14,9 @@ class BookDetailActivity : AppCompatActivity() {
         const val EXTRA_BOOK_ID = "extra_book_id"
     }
 
-
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_book_detail)
 
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
